@@ -1,0 +1,16 @@
+{
+    "works": [
+        {
+            "Title": "Tu-Hogar-Ideal",
+            "Descripcion": "Estaba pensando crear un sistema de buscar, vender, comprar Casas de toda Bolivia.",
+            "Lenguaje": "React, MongoDB",
+            "FechaFinalizacion": "Pendiente"
+        },
+        {
+            "Title": "Sistema de Gestión de Asistencia",
+            "Descripcion": "Una aplicación para gestionar la asistencia de empleados usando códigos QR.",
+            "Lenguaje": "Tkinter, SQLite",
+            "FechaFinalizacion": "Finalizado en 2023"
+        }
+    ]
+}

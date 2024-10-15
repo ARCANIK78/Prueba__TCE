@@ -1,0 +1,462 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Tahoma, sans-serif;
+}
+
+/* Header and Nav */
+html {
+  scroll-behavior: smooth; /* para activar esta funciona es con el siguienete enlace= chrome://flags/#smooth-scrolling*/
+}/*Esta funcion esta desabilitada en algunos sitios de googlecrome y no deja ver la funciona de suavidad */
+
+header{
+  height: 100px;  
+  background-color: #100f0f;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 95%; /* Mantener el width en 95% */
+  z-index: 1000;
+}
+.Logo{
+  text-transform: uppercase;
+  color:rgb(255, 255, 255);
+  font-weight: 200;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+label{
+  color: white;
+}
+
+.menu a{ 
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+  
+}
+.mostrar-menu,
+.esconder-menu{
+ font-size: 30px;
+ cursor: pointer;
+ display: none;
+ transition: 0.4s;
+
+}
+.mostrar-menu{
+  order: 1;
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+  color:  #0fa;
+}
+#check{
+  display: none;
+}
+.menu-link {
+  display: inline-block; /* Hacer que el contenedor se comporte como bloque en línea */
+  text-align: center;    /* Centrar el texto e ícono */
+}
+
+.menu-link svg {
+  display: block; /* Hacer que el ícono se muestre como bloque y esté encima del texto */
+  margin: 0 auto; /* Asegurar que el ícono esté centrado */
+}
+/* Baner*/
+#banner{
+  padding: 0 50px;
+  background-image: url(../desarrollador-web.jpg);
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px; 
+
+}
+#banner::before{
+  content: '';
+  background: rgb(77,77,92,0.6);
+  position: absolute;
+  width: 100%;
+  height: 30vh;
+  left: 0;
+  
+}
+.Contenido-banner{
+  position: relative;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Contenido-banner h3{
+  font-size: 30px;
+  font-weight: 400;
+  padding: 10px 0px;
+}
+.Contenido-banner h3 span{
+  font-weight: 600;
+
+}
+.boton-empezar{
+  text-decoration: none;
+  color: white;
+  border: 1px solid #00ff59;
+  padding: 20px 40px;
+  align-self: baseline;
+}
+.boton-empezar:hover{
+  background: #6cc09070;
+}
+
+
+@media(max-width: 768px){
+ 
+  .mostrar-menu,
+  .esconder-menu{
+    display: block;
+    width: 90px;
+  
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #9b1313;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+
+  }
+  .esconder-menu{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+  }
+  #check:checked ~ .menu{
+    right: 0;
+  }
+  #Acerca-pagina {
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px; /* Reduce el tamaño de la fuente en pantallas más pequeñas */
+    text-align: center; /* Ajusta el texto para que esté centrado */
+  }
+
+  #softwareimg {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px; /* Añade un margen en la parte inferior de la imagen */
+  
+    
+  }
+  .form-group {
+    gap: 10px; /* Reducir el espacio entre los campos en pantallas pequeñas */
+  }
+  
+  .campo {
+    flex: 1 1 100%; /* Hacer que los campos ocupen todo el ancho si hay espacio limitado */
+    min-width: unset; /* Eliminar el ancho mínimo en pantallas pequeñas */
+  }
+
+}
+
+body{
+  background: linear-gradient(90deg, rgb(4, 23, 42), rgb(53, 3, 3));
+}
+#Acerca-pagina {
+  border: 1px solid transparent; /* Asegúrate de tener algún color o quítalo si no lo necesitas */
+  padding: 50px;
+  margin:  50px ;
+  font-family: 'Arial', sans-serif;
+  width: 60%;
+  margin: 0px auto;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+ 
+}
+p{
+  font-size: 20px;
+  font-family: cursive;
+}
+
+/* Estilo base para la imagen */
+#softwareimg {
+  width: 280px;
+  height: 280px;
+  border-radius: 5%;
+  transition: 1s ;
+}
+#softwareimg:hover{
+  
+  transform: scale(1.1, 1.1);
+}
+::-webkit-scrollbar {
+  width: 8px;
+  border-left: 1px solid #E6ECF8;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #141c3a;
+}
+/*Carrusel*/
+main {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Contenedor */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagenes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: auto;
+  width: auto; 
+}
+.img {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+  height: 75vh;
+  width: 60vw; 
+  border-radius: 15px;
+  margin: 5px;
+  object-fit: cover;
+  filter: saturate(175%);
+  transition-duration: 1s;
+  animation: fadeIn 0.8s ease-in-out forwards;  /* Animacion al cargar */
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.texto {
+  overflow: hidden;
+  position: absolute;
+  flex-direction: column;
+  transform: translateY(0px);
+  margin-bottom: 9px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(63, 106, 138, 0.21);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+
+}
+
+.texto h3 {
+  text-shadow: 0px 0px 15px black;
+  padding-top: 40px;
+  color: white;
+  font-weight: 300;
+  font-size: 27px;
+}
+
+.texto p {
+  align-items: center;
+  padding: 20px;
+  color: white;
+  font-size: 0px;
+  font-weight: 300;
+}
+
+.imagenes .texto {
+  width: 50vw; /* Ajustado con vw para que sea responsivo */
+  height: 10vh; /* Ajustado con vh para que sea responsivo */
+  transition: 1s;
+}
+
+.imagenes:hover .texto{
+  transform: translateY(-100px);
+  height: 370px;
+  background-color: rgba(63, 106, 138, 0.71);
+}
+
+.imagenes:hover .texto p{
+  transition: font-size 0s .2s linear;
+  font-size: 23px;
+  font-weight: 300;
+  text-shadow: 0px 0px 10px #000000;
+  
+}
+.puntos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.puntos p{
+  font-size: 100px;
+  font-weight: 500;
+  margin-top: -50px;
+  color: black;
+}
+
+.puntos .bold{
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #5E17EB ;
+}
+/*Acerca de mi-------------*/
+
+#acerca{
+  padding: 50px;
+  margin:  50px ;
+  font-family: 'Arial', sans-serif;
+  width: 60%;
+  margin: 0px auto;
+}
+
+#titulo{
+color: #f3b61f;
+font-size: 1.8em;
+margin-bottom: 10px;
+
+}
+#textito {
+font-size: 1.1em;
+line-height: 1.6;
+color: white;
+font-family:'Times New Roman', Times, serif;
+}
+.iconos {
+  width: 48px;
+  height: 48px;
+}
+.iconos:hover{
+  transition: 1s;
+  transform: scale(1.5,1.5);
+}
+
+/*Contactos*/
+#titulo1 {
+  color: #f3b61f;
+  text-align: center;
+}
+
+#formulario {
+  padding: 10px;
+}
+
+/* Estilo para los campos en la misma fila */
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espaciado entre los campos */
+  flex-wrap: wrap; /* Permitir que los campos se ajusten si es necesario */
+}
+
+.campo {
+  flex: 1; /* Hacer que los campos ocupen el mismo espacio */
+  min-width: 250px; /* Establecer un ancho mínimo para que no se reduzcan demasiado */
+}
+
+.controls {
+  width: 100%; /* Para que los inputs ocupen el ancho completo del contenedor */
+  border: 1px solid #017bab;
+  padding: 11px 10px;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 16px;
+  border-radius: 22px;
+}
+
+.mensaje {
+  width: 100%; 
+  height: 201px;
+  border: 1px solid #017bab;
+  padding: 11px 10px;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 16px;
+  border-radius: 22px;
+  resize: vertical;
+}
+
+.sumitt {
+  width: 100%; 
+  border: 1px solid #017bab;
+  padding: 11px 10px;
+  background: #0088fe;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  border-radius: 22px;
+  transition: 1s;
+}
+
+.sumitt:hover {
+  transform: scale(1.1, 1.1);
+}
+/* copy*/
+.footer {
+  height: 30px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #f3b61f;
+
+  padding: 10px;
+  background-color: #000000; 
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  border-left: 1px solid #E6ECF8;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #141c3a;
+}
+

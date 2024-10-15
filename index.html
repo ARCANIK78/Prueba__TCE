@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+  <header>
+    <h2 class="Logo">Portafolio</h2>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar-menu">&#8801</label>
+    <nav class="menu">
+      <a href="index.html" class="menu-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+            <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7z"></path></svg>Home</a>
+      <a href="#titulo" class="menu-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+          <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
+        </svg>Proyectos</a>
+      <a href="#acerca"  class="menu-link"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" data-supported-dps="24x24" viewBox="0 0 24 24" data-token-id="185" width="24" height="24" class="_1v88awfd cnuthtag _1ptbkx61c _1ptbkx614g" aria-label=""><path d="M7 7a5 5 0 1 1 5 5 5 5 0 0 1-5-5m7 7h-4a3 3 0 0 0-3 3v5h10v-5a3 3 0 0 0-3-3"></path></svg>Sobre mi</a>
+      <a href="#formulario" class="menu-link"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" data-supported-dps="24x24" viewBox="0 0 24 24" data-token-id="135" width="24" height="24" class="_1v88awfd cnuthtag _1ptbkx61c _1ptbkx614g" aria-label=""><path d="M4 2h2v20H4zm13 0v5l-2-2-2 2V2H7v20h10a2.76 2.76 0 0 0 3-2.5 2 2 0 0 0 0-.5V5a2.76 2.76 0 0 0-2.5-3 2 2 0 0 0-.5 0"></path></svg>Contacto</a>
+      <label for="check" class="esconder-menu">
+        &#215
+      </label>
+   </nav>
+ </header>
+ <!-- Banner Section -->
+ <section id="banner">
+    <div class="Contenido-banner">
+        <h3><span>Hola mi nombre: </span>Luis Edgar Arcani Ribera<br>Soy Programador </h3>
+        <a href="./Proyectos.html" class="boton-empezar">Todos mis Proyectos </a>
+    </div>
+  </section>
+ <section id="Acerca-pagina">
+    <p>En este portafolio, te presento mi experiencia y habilidades desarrolladas a lo largo de mi formación y proyectos en el campo de la ingeniería de sistemas.<br/> 
+      Aquí podrás ver ejemplos concretos de mis capacidades en programación, diseño de bases de datos y desarrollo web.<br/> 
+      Además, destaco mis proyectos más relevantes, como el sistema de control de asistencia con códigos QR, que muestran mi enfoque en la 
+      solución de problemas mediante el uso de tecnología.<br/> A través de este portafolio, quiero compartir mi pasión por el aprendizaje 
+      constante y mi compromiso con el desarrollo de soluciones tecnológicas innovadoras.</p>
+    <img  id="softwareimg" src="./Software1.jpg">
+  </section>
+  <main>
+  <!-- Carrusel de Imagenes -->  
+  <h2 id="titulo">Proyectos mas relevantes</h2>
+      <div class="carrusel">
+          <div class="atras">
+              <img id="atras" src="img/atras.svg" alt="atras" loading="lazy">
+          </div>
+          <div class="imagenes">
+              <div id="img">
+                  <img class="img" src="articulosimg/SistemaGestionBibli/Captura.JPG" alt="imagen 1" loading="lazy">
+              </div>
+              <div id="texto" class="texto">
+                  <h3>Sistema de Gestión de una Biblioteca</h3>
+                  <p>Aplicación de escritorio para gestionar una biblioteca. Permite agregar libros, gestionar lectores, prestar y devolver libros, entre otras funciones.</p>
+                  <p><strong>Lenguajes utilizados:</strong> Python, PyQt, MySql</p>
+              </div>
+          </div>
+          <div class="adelante" id="adelante">
+              <img src="img/adelante.svg" alt="adelante" loading="lazy">
+          </div>
+      </div>
+      <div class="puntos" id="puntos"></div>
+        <script src="app.js"></script>
+  </main>
+  <!-- Informacion Personal -->  
+  <section id="acerca">
+    <hr>
+    <h2 id="titulo">Información Personal</h2>
+    <p id="textito">
+      Soy estudiante de Ingeniería de Sistemas con una pasión por la programación y tecnología.<br/>
+      Me encanta resolver problemas con código y explorar nuevas herramientas tecnológicas.
+    </p>
+    <hr>
+    <h2 id="titulo">Formación Académica</h2>
+      <p id="textito">
+        Soy estudiante de la carrera de Ingeniería de Sistemas en la <strong>Universidad Autónoma del Beni "José Ballivián" (UABJB)</strong>
+      </p>
+      <a href="https://www.uabjb.edu.bo/" target="_blank">
+        <img src="/articulosimg/UAB/uab_logo.png" class="iconos" >
+      </a>
+      <a href="https://www.facebook.com/sistemasuabjb/" target="_blank">
+        <img src="/articulosimg/UAB/CIS.png" class="iconos">
+      </a>
+      <br/>
+    <hr>
+    <h2 id="titulo">Habilidades Técnicas</h2>
+    <p id="textito">Tengo experiencia en varios lenguajes de programación:</p>
+    <p id="textito">
+      <a href="https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)" target="_blank">
+        <img src="https://img.icons8.com/?size=48&amp;id=40670&amp;format=png" alt="C icon" class="iconos">
+      </a>
+      <a href="https://es.wikipedia.org/wiki/C_Sharp" target="_blank">
+        <img src="https://img.icons8.com/?size=48&amp;id=55251&amp;format=png" alt="C# icon" class="iconos">
+      </a>
+      <a href="https://www.python.org/" target="_blank">
+        <img src="https://img.icons8.com/?size=48&amp;id=l75OEUJkPAk4&amp;format=png" alt="Python icon" class="iconos">
+      </a>
+      <a href="https://www.java.com/" target="_blank">
+        <img src="https://img.icons8.com/?size=48&amp;id=13679&amp;format=png" alt="Java icon" class="iconos"> 
+      </a>
+    </p>
+    <p id="textito">También he trabajado con desarrollo web usando:</p>
+    <p id="textito">
+      <a href="https://es.wikipedia.org/wiki/HTML" target="_blank">
+        <img src="https://img.icons8.com/?size=48&amp;id=v8RpPQUwv0N8&amp;format=png" alt="HTML 5 icon" class="iconos">
+      </a>
+      <a href="https://es.wikipedia.org/wiki/CSS" target="_blank">
+        <img src="https://img.icons8.com/?size=48&amp;id=7gdY5qNXaKC0&amp;format=png" alt="CSS3 icon" class="iconos">
+      </a>
+      <a href="https://es.wikipedia.org/wiki/JavaScript" target="_blank">
+        <img src="https://img.icons8.com/?size=48&amp;id=108784&amp;format=png" alt="JavaScript icon" class="iconos"> 
+      </a>
+      <a href="https://es.react.dev/" target="_blank">
+        <img src="https://img.icons8.com/?size=48&amp;id=bzf0DqjXFHIW&amp;format=png" alt="React icon" class="iconos">
+      </a>
+    </p>
+    <p id="textito">Manejo bases de datos como:</p>
+    <p id="textito">
+      <a href="https://www.microsoft.com/es-es/sql-server/sql-server-downloads" target="_blank">
+        <img src="https://img.icons8.com/?size=48&amp;id=laYYF3dV0Iew&amp;format=png" alt="SQL Server icon" class="iconos">
+      </a>
+      <a href="https://www.mysql.com/" target="_blank">
+        <img src="https://img.icons8.com/?size=48&amp;id=UFXRpPFebwa2&amp;format=png" alt="MySQL icon" class="iconos">
+      </a>
+      <a href="https://www.sqlite.org/" target="_blank">
+        <img src="https://img.icons8.com/?size=48&amp;id=VMRAbKfEzssG&amp;format=png" alt="PostgreSQL icon" class="iconos">  
+      </a>
+      <a href="https://www.postgresql.org/" target="_blank">
+        <img src="https://img.icons8.com/?size=48&amp;id=38561&amp;format=png" alt="SQLite icon" class="iconos">
+      </a>
+    </p>
+    <p id="textito">
+      Soy competente en sistemas operativos tanto Windows como Linux:
+    </p>
+    <p id="textito">
+      <a href="https://www.microsoft.com/es-bo/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/128/220/220215.png" alt="Windows icon" class="iconos">
+      </a>
+      <a href="https://www.debian.org/" target="_blank">
+        <img src="https://img.icons8.com/?size=48&amp;id=17838&amp;format=png" alt="Debian icon" class="iconos">
+      </a>
+      <a href="https://ubuntu.com/" target="_blank">
+        <img src="https://img.icons8.com/?size=48&amp;id=63208&amp;format=png" alt="Ubuntu icon" class="iconos">
+      </a>
+      <a href="https://www.kali.org/" target="_blank">
+        <img src="https://img.icons8.com/?size=48&amp;id=qBWtR72kluCU&amp;format=png" alt="Kali Linux icon" class="iconos">
+      </a>
+    </p>
+    <hr>
+      <p id="textito">
+          también utilizo GitHub y git para gestionar y colaborar en proyectos de software.
+      </p>
+      <p>
+        <a href="https://github.com/" target="_blank">
+          <img src="https://www.svgrepo.com/show/512317/github-142.svg" alt="GitHub 142 SVG File" title="GitHub 142 SVG File" width="48" height="48" class="iconos">
+        </a>
+        <a>
+          <a href="https://git-scm.com/" target="_blank">
+            <img src="https://www.svgrepo.com/show/452210/git.svg" alt="Git icon" class="iconos" width="150" height="150">
+          </a>
+        </a>
+      </p>
+<hr>
+    <h2 id="titulo">Metas Profesionales</h2>
+      <p id="textito">
+        Mi objetivo profesional es consolidarme como desarrollador de software, con una especialización en el área full-stack.
+      </p>
+      <hr>
+      <h2 id="titulo">Conéctate conmigo</h2>
+        <p>
+            <a href="https://github.com/ARCANIK78" target="_blank">
+              <img src="https://www.svgrepo.com/show/512317/github-142.svg" alt="GitHub 142 SVG File" title="GitHub 142 SVG File" width="48" height="48" class="iconos">
+            </a>
+            <a href="https://www.facebook.com/share/oxu5o2KXAfmMQvck/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="Facebook" class="iconos">
+            </a>
+            <a href="https://www.linkedin.com/in/luis-edgar-arcani-ribera-278645257/?originalSubdomain=bo" target="_blank">
+              <img src="https://img.icons8.com/?size=48&id=13930&format=png" alt="LinkedIn" class="iconos">
+            </a>
+        </p>
+      <hr>
+      <form id="formulario" action="https://formsubmit.co/loisgordisrour@gmail.com" method="POST">
+        <h2 id="titulo1">Gracias por  comunicarte conmigo.<br />¿Cómo puedo ayudarte hoy?</h2>
+        
+        <div class="form-group">
+            <div class="campo">
+                <label>Nombre</label><br>
+                <input class="controls" type="text" name="name" required="">
+            </div>
+            <div class="campo">
+                <label>Correo Electrónico</label><br>
+                <input class="controls" type="email" name="email" required="">
+            </div>
+        </div>
+        
+        <label>Mensaje</label><br>
+        <textarea class="mensaje" name="message" rows="5" required=""></textarea>
+        
+        <input class="sumitt" type="submit" value="Enviar"><br>
+    </form>
+    <!--- derechos reservados ---->
+    <div class="footer">
+      © 2024 Luis Edgar Arcani Ribera. Todos los derechos reservados.
+    </div>
+</section>
+</body>
+</html>
